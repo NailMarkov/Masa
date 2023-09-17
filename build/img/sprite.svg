@@ -1,1 +1,17 @@
-<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><symbol id="icon-close" viewBox="0 0 20 20"><g fill="none"><path d="M.293 18.291a1 1 0 101.414 1.414L10 11.413l8.292 8.292a1 1 0 101.414-1.414l-8.292-8.292 8.292-8.292A1 1 0 1018.291.293L9.999 8.585 1.707.293A1 1 0 10.293 1.707L8.585 10 .293 18.291z"/></g></symbol></svg>
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><defs>
+<clipPath id="clip0_11_680">
+<rect width="10" height="10" fill="white" transform="translate(10 10)"/>
+</clipPath>
+</defs><symbol id="arrow-next" viewBox="0 0 22 22"><g fill="none">
+<path d="M6 10.6875H16M16 10.6875L11.0331 16M16 10.6875L11.0331 6" stroke="#316DC2"/>
+</g></symbol><symbol id="arrow-prev" viewBox="0 0 22 22"><g fill="none">
+<path d="M16 10.6875H6M6 10.6875L10.9669 16M6 10.6875L10.9669 6" stroke="#316DC2"/>
+</g></symbol><symbol id="arrow45" viewBox="0 0 30 30"><g fill="none">
+<rect width="30" height="30" rx="15" fill="#316DC2"/>
+<g clip-path="url(#clip0_11_680)">
+<path d="M11 19L19 11M19 11H11.053M19 11V18.947" stroke="white"/>
+</g>
+
+</g></symbol><symbol id="icon-close" viewBox="0 0 20 20"><g fill="none"><path d="M.293 18.291a1 1 0 101.414 1.414L10 11.413l8.292 8.292a1 1 0 101.414-1.414l-8.292-8.292 8.292-8.292A1 1 0 1018.291.293L9.999 8.585 1.707.293A1 1 0 10.293 1.707L8.585 10 .293 18.291z"/></g></symbol><symbol id="menu-close" viewBox="0 0 20 20"><g fill="none">
+<path d="M1 6H19M1 10H19M1 14H19" stroke="white" stroke-linecap="round"/>
+</g></symbol></svg>
