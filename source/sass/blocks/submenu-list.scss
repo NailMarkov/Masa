@@ -1,0 +1,22 @@
+.submenu-list {
+  margin: 16px 0 0;
+  padding: 0 0 0 16px;
+  list-style-type: none;
+  letter-spacing: normal;
+  color: inherit;
+  text-transform: none;
+}
+
+.submenu-list__item {
+  margin-bottom: 12px;
+}
+
+.submenu-list__link {
+  display: inline-block;
+  color: inherit;
+  opacity: 0.6;
+
+  &--is-active {
+    opacity: 0.9;
+  }
+}

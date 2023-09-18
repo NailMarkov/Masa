@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Описание проекта" />
+  <title>Маса</title>
+  <link rel="stylesheet" href="css/style.min.css" />
+  <link rel="preload" href="fonts/Manrope-Light.woff2" type="font/woff2" as="font" crossorigin="anonymous" />
+  <link rel="preload" href="fonts/Manrope-Regular.woff2" type="font/woff2" as="font" crossorigin="anonymous" />
+  <link rel="preload" href="fonts/Manrope-Medium.woff2" type="font/woff2" as="font" crossorigin="anonymous" />
+</head>
+
+<body>
+  <div class="wrapper">
+
+    <!-- Header -->
+    <header class="page-header">
+      <nav class="page-header__nav">
+        <a href="" class="page-header__link">
+          <img class="page-header__logo" src="img/logo.jpg" alt="Логотип сайта Маса." width="52" height="52">
+        </a>
+        <button class="button-container button-container--toggle button-container--closed" type="button">
+          <span class="visually-hidden">Переключатель отображения меню.</span>
+          меню
+        </button>
+        <ul class="list-menu list-menu--closed">
+          <li class="list-menu__item">
+            <a class="list-menu__link" href="#!">О проекте</a>
+          </li>
+          <li class="list-menu__item">
+            <a class="list-menu__link list-menu__link--arrow-up list-menu__link--is-active" href="#!">Программы</a>
+            <ul class="list-menu__submenu submenu-list submenu-list--closed">
+              <li class="submenu-list__item"><a class="submenu-list__link submenu-list__link--is-active" href="#!">Стажировки</a></li>
+              <li class="submenu-list__item"><a class="submenu-list__link" href="#!">Волонтёрство</a></li>
+              <li class="submenu-list__item"><a class="submenu-list__link" href="#!">Учеба</a></li>
+              <li class="submenu-list__item"><a class="submenu-list__link" href="#!">Религия</a></li>
+            </ul>
+          </li>
+          <li class="list-menu__item">
+            <a class="list-menu__link" href="#!">как поехать</a>
+          </li>
+          <li class="list-menu__item">
+            <a class="list-menu__link" href="#!">отзывы</a>
+          </li>
+          <li class="list-menu__item">
+            <a class="list-menu__link list-menu__link--arrow-down" href="#!">новости</a>
+          </li>
+          <li class="list-menu__item">
+            <a class="list-menu__link" href="#!">контакты</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <h1 class="visually-hidden">Сайт Маса для подготовки специалистов в разных сферах.</h1>
+    </main>
+
+    <!-- Footer -->
+    <footer class="page-footer">
+      <a href="" class="page-footer__link">
+        <img class="page-footer__logo" src="img/logo.jpg" alt="Логотип сайта Маса." width="52" height="52">
+      </a>
+      <ul class="site-list">
+        <li class="site-list__item"><a class="site-list__link" href="#!">О проекте</a></li>
+        <li class="site-list__item"><a class="site-list__link" href="#!">Программы</a></li>
+        <li class="site-list__item"><a class="site-list__link" href="#!">Как поехать</a></li>
+        <li class="site-list__item"><a class="site-list__link" href="#!">Отзывы</a></li>
+        <li class="site-list__item"><a class="site-list__link" href="#!">Новости</a></li>
+        <li class="site-list__item"><a class="site-list__link" href="#!">Контакты</a></li>
+      </ul>
+      <ul class="social-list">
+        <li class="social-list__item"></li>
+        <li class="social-list__item"></li>
+        <li class="social-list__item"></li>
+      </ul>
+      <a class="page-footer__copiright" href="#!">Masa © 2023 Все права защищены</a>
+      <a class="page-footer__privacy" href="#!">Политика конфиденциальности</a>
+    </footer>
+  </div>
+
+  <!-- Модалки
+  <div class="modal modal--preload" data-modal="feedback">
+    <div class="modal__wrapper">
+      <div class="modal__overlay" data-close-modal></div>
+      <div class="modal__content">
+        <p class="modal__description">Обычная модалка</p>
+        <button class="modal__close-btn btn-reset" type="button" aria-label="Закрыть попап" data-close-modal>
+          <svg width="15" height="15">
+            <use xlink:href="img/sprite.svg#icon-close"></use>
+          </svg>
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <div class="modal modal--preload modal--fit-content modal--no-scale" data-modal="success">
+    <div class="modal__wrapper">
+      <div class="modal__overlay" data-close-modal></div>
+      <div class="modal__content">
+        <p class="modal__description">Размер этой модалки зависит от ширины контента,<br> отключена анимация-скейл</p>
+        <button class="modal__close-btn btn-reset" type="button" aria-label="Закрыть попап" data-close-modal>
+          <svg width="15" height="15">
+            <use xlink:href="img/sprite.svg#icon-close"></use>
+          </svg>
+        </button>
+      </div>
+    </div>
+  </div> -->
+
+  <script>
+    window.pixelperfect = {
+      breakpoints: [320, 768, 1440],
+      folder: "img/pixelperfect",
+    };
+  </script>
+  <script src="https://efiand.github.io/pixelperfect-tool/pixelperfect.min.js"></script>
+
+  <script src="js/vendor.min.js"></script>
+  <script src="js/main.min.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,47 @@
+.button-container {
+  position: relative;
+  padding: 4px 80px 4px 30px;
+  height: 54px;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 14px;
+  letter-spacing: 0.28px;
+  text-transform: uppercase;
+  color: $color-cerulean-blue;
+  background-color: inherit;
+  border-radius: 30px;
+  border: 1px solid $color-cerulean-blue;
+  cursor: pointer;
+
+  &::after {
+    position: absolute;
+    content: "";
+    top: 3px;
+    right: 4px;
+    width: 46px;
+    height: 46px;
+  }
+
+  &--toggle {
+    margin-left: auto;
+    padding-left: 20px;
+    padding-right: 70px;
+    background-color: $color-default-white;
+  }
+
+  &--closed::after {
+    background-image: url("../img/svg/icon-open.svg");
+  }
+
+  &--opened {
+    width: 286px;
+    color: $color-default-white;
+    background-color: $color-cerulean-blue;
+    text-align: left;
+    z-index: 3;
+
+    &::after{
+      background-image: url("../img/svg/icon-close.svg");
+    }
+  }
+}
