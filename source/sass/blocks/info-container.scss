@@ -1,0 +1,39 @@
+.info-container {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.info-container__block {
+  position: relative;
+  background-color: $color-default-white;
+  min-width: 94px;
+  min-height: 38px;
+
+  &--first {
+    padding: 14px 20px;
+    border-radius: 20px 20px 0 0;
+
+    &::after {
+      position: absolute;
+      content: "";
+      bottom: 0;
+      right: -20px;
+      width: 20px;
+      height: 20px;
+      background-image: url("../img/svg/right-down-corner.svg");
+    }
+  }
+
+  &--second {
+    padding: 40px 50px 30px;
+    color: $color-cerulean-blue;
+  }
+}
+
+.info-container__title {
+  margin: 0;
+  font-weight: 400;
+  font-size: 54px;
+  line-height: 62px;
+}
