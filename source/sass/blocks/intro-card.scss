@@ -1,16 +1,35 @@
 .intro-card {
   display: grid;
-  grid-template-rows: repeat(2, 1fr);
+  grid-template-rows: min-content 1fr;
+  align-items: end;
 }
 
 .intro-card__photo {
+  position: relative;
   grid-column: 1 / -1;
   grid-row: 1 / 3;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(49, 109, 194, 0.2);
+  }
 }
 
 .intro-card__info {
   grid-column: 1 / -1;
   grid-row: 2 / 3;
-  padding: 30px 100px 60px;
+  padding: 30px 372px 60px 100px;
   z-index: 1;
+}
+
+.info-container__description {
+  margin: -1px 0 0;
+  line-height: 26px;
 }

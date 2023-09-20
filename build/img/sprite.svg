@@ -6,6 +6,8 @@
 <path d="M6 10.6875H16M16 10.6875L11.0331 16M16 10.6875L11.0331 6" stroke="#316DC2"/>
 </g></symbol><symbol id="arrow-prev" viewBox="0 0 22 22"><g fill="none">
 <path d="M16 10.6875H6M6 10.6875L10.9669 16M6 10.6875L10.9669 6" stroke="#316DC2"/>
+</g></symbol><symbol id="arrow-top-right" viewBox="0 0 22 22"><g fill="none">
+<path d="M1 21L21 1M21 1H1.13245M21 1V20.8676" stroke="currentColor"/>
 </g></symbol><symbol id="arrow45" viewBox="0 0 30 30"><g fill="none">
 <rect width="30" height="30" rx="15" fill="#316DC2"/>
 <g clip-path="url(#clip0_11_680)">
