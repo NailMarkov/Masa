@@ -1556,7 +1556,101 @@ button,
 }
 
 .about {
-  padding: 120px calc(50% - 620px) 60px;
+  display: -ms-grid;
+  display: grid;
+  gap: 60px 32px;
+  -ms-grid-columns: (1fr)[2];
+  grid-template-columns: repeat(2, 1fr);
+  padding: 123px calc(50% - 620px) 60px;
+}
+
+.about__container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-align: start;
+  -ms-flex-align: start;
+  align-items: flex-start;
+  gap: 23px;
+}
+
+.about__subtitle {
+  margin: 0 0 16px;
+  font-weight: 400;
+  font-size: 32px;
+  line-height: 26px;
+  color: #316dc2;
+}
+
+.about__info {
+  margin: 6px 0 0;
+  padding-right: 40px;
+  font-size: 22px;
+  line-height: 32px;
+}
+
+.about__description {
+  margin: 0 0 17px;
+  padding-right: 75px;
+  line-height: 26px;
+}
+
+.block-statistics {
+  grid-column: 1/-1;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[2];
+  grid-template-columns: repeat(2, 1fr);
+  gap: 52px;
+  padding: 92px 106px 55px 126px;
+  color: #ffffff;
+  background-color: #316dc2;
+  border-radius: 20px;
+}
+
+.block-statistics__specific {
+  position: relative;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 171px 1fr;
+  grid-template-columns: 171px 1fr;
+  gap: 8px;
+  padding: 30px 45px 30px 60px;
+  border: 1px solid #ffffff;
+  border-radius: 16px;
+}
+
+.block-statistics__specific::before {
+  position: absolute;
+  content: "";
+  top: -21px;
+  left: -21px;
+  width: 42px;
+  height: 42px;
+  background-image: url("../img/svg/star.svg");
+}
+
+.block-statistics__specific:nth-child(2n) {
+  gap: 20px;
+}
+
+.block-statistics__title {
+  margin: 0;
+  font-weight: 400;
+  font-size: 26px;
+  line-height: 30px;
+  letter-spacing: 0.26;
+  text-transform: uppercase;
+}
+
+.block-statistics__description {
+  margin: 0;
+  font-weight: 300;
+  line-height: 20px;
 }
 
 .btn {
@@ -2624,6 +2718,14 @@ button,
 
 .submenu-list__link--is-active {
   opacity: 0.9;
+}
+
+.subtitle {
+  margin: 0;
+  font-weight: 400;
+  font-size: 50px;
+  line-height: 50px;
+  color: #316dc2;
 }
 
 /* @mixin hover-focus {
