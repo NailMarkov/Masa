@@ -2,6 +2,7 @@
   position: absolute;
   padding: 0 calc(50% - 620px);
   width: 100%;
+  z-index: 2;
 
   @include vp-1279 {
     padding: 0 20px;
