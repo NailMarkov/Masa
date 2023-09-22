@@ -1,0 +1,49 @@
+.block-statistics {
+  grid-column: 1 / -1;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 52px;
+  padding: 92px 106px 55px 126px;
+  color: $color-default-white;
+  background-color: $color-cerulean-blue;
+  border-radius: 20px;
+}
+
+.block-statistics__specific {
+  position: relative;
+  display: grid;
+  grid-template-columns: 171px 1fr;
+  gap: 8px;
+  padding: 30px 45px 30px 60px;
+  border: 1px solid $color-default-white;
+  border-radius: 16px;
+
+  &::before {
+    position: absolute;
+    content: "";
+    top: -21px;
+    left: -21px;
+    width: 42px;
+    height: 42px;
+    background-image: url("../img/svg/star.svg");
+  }
+
+  &:nth-child(2n) {
+    gap: 20px;
+  }
+}
+
+.block-statistics__title {
+  margin: 0;
+  font-weight: 400;
+  font-size: 26px;
+  line-height: 30px;
+  letter-spacing: 0.26;
+  text-transform: uppercase;
+}
+
+.block-statistics__description {
+  margin: 0;
+  font-weight: 300;
+  line-height: 20px;
+}
