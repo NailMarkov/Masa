@@ -1,11 +1,20 @@
 .wrapper {
   position: relative;
 
-  display: grid;
-  grid-template-rows: min-content 1fr min-content;
-  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  min-height: 100%;
   /* stylelint-disable-next-line */
   min-height: calc(100 * var(--vh, 1vh));
+
+  .header,
+  .footer {
+    flex-shrink: 0;
+  }
+
+  main {
+    flex-grow: 1;
+  }
 }
 
 .visually-hidden {

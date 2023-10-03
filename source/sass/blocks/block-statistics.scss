@@ -2,11 +2,22 @@
   grid-column: 1 / -1;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  gap: 52px;
-  padding: 92px 106px 55px 126px;
+  gap: 54px 52px;
+  padding: 92px 106px 56px 126px;
   color: $color-default-white;
   background-color: $color-cerulean-blue;
   border-radius: 20px;
+
+  @include vp-1199 {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 40px 50px;
+    padding: 60px 40px 40px 60px;
+  }
+
+  @include vp-767 {
+    grid-template-columns: 1fr;
+    padding: 40px 20px 40px 30px;
+  }
 }
 
 .block-statistics__specific {
@@ -14,14 +25,19 @@
   display: grid;
   grid-template-columns: 171px 1fr;
   gap: 8px;
-  padding: 30px 45px 30px 60px;
+  padding: 29px 45px 29px 60px;
   border: 1px solid $color-default-white;
   border-radius: 16px;
+
+  @include vp-1199 {
+    grid-template-columns: 1fr;
+    padding: 30px 40px 25px 30px;
+  }
 
   &::before {
     position: absolute;
     content: "";
-    top: -21px;
+    top: -23px;
     left: -21px;
     width: 42px;
     height: 42px;
@@ -30,6 +46,10 @@
 
   &:nth-child(2n) {
     gap: 20px;
+
+    @include vp-1199 {
+      gap: 9px;
+    }
   }
 }
 
@@ -40,6 +60,11 @@
   line-height: 30px;
   letter-spacing: 0.26;
   text-transform: uppercase;
+
+  @include vp-1199 {
+    font-size: 20px;
+    line-height: 22px;
+  }
 }
 
 .block-statistics__description {

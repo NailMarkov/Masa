@@ -1,0 +1,61 @@
+.link {
+  position: relative;
+  margin-top: -8px;
+  padding: 19px 80px 19px 30px;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 14px;
+  letter-spacing: 0.28px;
+  text-transform: uppercase;
+  color: $color-cerulean-blue;
+  border: 1px solid $color-cerulean-blue;
+  border-radius: 30px;
+
+  @include vp-1199 {
+    margin-top: -24px;
+  }
+
+  @include vp-767 {
+    margin-top: 0;
+    padding: 19px 57px 19px 19px;
+    font-size: 12px;
+    line-height: 12px;
+    letter-spacing: 0.24px;
+  }
+
+  &::after {
+    position: absolute;
+    content: "";
+    top: 3px;
+    right: 4px;
+    width: 46px;
+    height: 46px;
+    background-image: url("../img/svg/arrow-top-right-blue.svg");
+
+    @include vp-767 {
+      width: 34px;
+      height: 34px;
+      background-size: 34px 34px;
+    }
+  }
+
+  &:hover,
+  &:focus {
+    color: $color-default-white;
+    background-color: $color-cerulean-blue;
+    outline: none;
+
+    &::after {
+      background-image: url("../img/svg/arrow-right-white.svg");
+    }
+  }
+
+  &:active {
+    color: rgba(255, 255, 255, 0.7);
+    background-color: $color-cerulean-blue;
+
+    &::after {
+      background-image: url("../img/svg/arrow-right-white-opasity.svg");
+    }
+  }
+}

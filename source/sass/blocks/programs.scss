@@ -1,0 +1,17 @@
+.programs {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  align-items: flex-start;
+  gap: 46px;
+  padding: 64px calc(50% - 620px) 60px;
+}
+
+.programs__link {
+  margin-top: -4px;
+  margin-left: auto;
+}
+
+.programs__swiper-wrapper {
+  grid-column: 1 / -1;
+  position: relative;
+}

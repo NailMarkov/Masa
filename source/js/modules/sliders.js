@@ -14,3 +14,19 @@ export const initSlider = () => {
   return introSlider;
 };
 
+export const initSliderPrograms = () => {
+  const sliderPrograms = document.querySelector('[data-slider="programs"]');
+  const programsSlider = new window.Swiper(sliderPrograms, {
+    initialSLide: 1,
+    slidesPerView: 3,
+    spaceBetween: 32,
+    scrollbar: {
+      el: document.querySelector('[data-scrollbar="programs"]'),
+      draggable: true,
+      dragClass: 'drag-scroll',
+    },
+  });
+
+  return programsSlider;
+};
+
