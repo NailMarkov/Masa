@@ -2753,14 +2753,14 @@ button,
   .block-statistics {
     -ms-grid-columns: (1fr)[2];
     grid-template-columns: repeat(2, 1fr);
-    gap: 40px 50px;
-    padding: 60px 40px 40px 60px;
+    gap: 42px 50px;
+    padding: 62px 40px 40px 60px;
   }
 
   .block-statistics__specific {
     -ms-grid-columns: 1fr;
     grid-template-columns: 1fr;
-    padding: 30px 40px 25px 30px;
+    padding: 29px 40px 24px 30px;
   }
 
   .block-statistics__specific:nth-child(2n) {
@@ -2895,16 +2895,53 @@ button,
 
   .about__description {
     margin-top: -4px;
-    margin-bottom: 36px;
+    margin-bottom: 13px;
     padding-right: 0;
     font-size: 14px;
     line-height: 20px;
   }
 
+  .about__link {
+    margin-bottom: 11px;
+  }
+
   .block-statistics {
     -ms-grid-columns: 1fr;
     grid-template-columns: 1fr;
-    padding: 40px 20px 40px 30px;
+    gap: 22px;
+    padding: 42px 20px 40px 30px;
+  }
+
+  .block-statistics__specific {
+    gap: 3px;
+    padding: 19px 17px 24px 19px;
+  }
+
+  .block-statistics__specific::before {
+    top: -20px;
+    left: -18px;
+    width: 39px;
+    height: 39px;
+    background-size: 36px;
+  }
+
+  .block-statistics__specific:nth-child(2n) {
+    gap: 3px;
+  }
+
+  .block-statistics__title {
+    font-size: 16px;
+    line-height: 20px;
+    letter-spacing: 0.16px;
+  }
+
+  .block-statistics__title br {
+    display: none;
+  }
+
+  .block-statistics__description {
+    padding-right: 35px;
+    font-size: 14px;
   }
 
   .block-wrapper__first--intro {
@@ -3014,7 +3051,7 @@ button,
   }
 
   .intro-card__info {
-    padding: 233px 15px 13px;
+    padding: 233px 15px 20px;
   }
 
   .link {
