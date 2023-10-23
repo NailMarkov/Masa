@@ -3,6 +3,7 @@ import {initModals} from './modules/modals/init-modals';
 import {Form} from './modules/form-validate/form';
 import {initNav} from './modules/menu';
 import {initSlider, initSliderPrograms} from './modules/sliders';
+import {initChangeBlock} from './utils/show-block';
 
 // ---------------------------------
 
@@ -18,6 +19,7 @@ window.addEventListener('DOMContentLoaded', () => {
 
   initNav();
   initSlider();
+  initChangeBlock();
   initSliderPrograms();
 
   // все скрипты должны быть в обработчике 'DOMContentLoaded', но не все в 'load'

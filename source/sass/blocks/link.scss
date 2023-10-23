@@ -17,7 +17,7 @@
 
   @include vp-767 {
     margin-top: 0;
-    padding: 19px 57px 19px 19px;
+    padding: 12px 57px 14px 19px;
     font-size: 12px;
     line-height: 12px;
     letter-spacing: 0.24px;
@@ -33,6 +33,8 @@
     background-image: url("../img/svg/arrow-top-right-blue.svg");
 
     @include vp-767 {
+      top: 2px;
+      right: 3px;
       width: 34px;
       height: 34px;
       background-size: 34px 34px;
