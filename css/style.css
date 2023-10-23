@@ -1536,6 +1536,10 @@ button,
   outline: none;
 }
 
+.hidden {
+  display: none;
+}
+
 .swiper-pagination {
   z-index: 1;
 }
@@ -1664,6 +1668,104 @@ button,
   margin: 0;
   font-weight: 300;
   line-height: 20px;
+}
+
+.block-wrapper {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr;
+  grid-template-columns: 1fr;
+}
+
+.block-wrapper__first {
+  position: relative;
+  min-width: 94px;
+  min-height: 38px;
+  font-size: 12px;
+  line-height: 12px;
+  letter-spacing: 0.12px;
+  text-transform: uppercase;
+  color: #316dc2;
+  background-color: #ffffff;
+}
+
+.block-wrapper__first--intro {
+  margin-right: auto;
+  padding: 14px 20px 14px 10px;
+  border-radius: 20px 20px 0 0;
+}
+
+.block-wrapper__first::after {
+  position: absolute;
+  content: "";
+  bottom: 0;
+  right: -20px;
+  width: 20px;
+  height: 20px;
+  background-image: url("../img/svg/right-down-corner.svg");
+  background-repeat: no-repeat;
+}
+
+.block-wrapper__title {
+  color: #316dc2;
+  background-color: #ffffff;
+}
+
+.block-wrapper__title--intro {
+  margin: 0;
+  padding: 40px 50px 30px;
+  font-weight: 400;
+  font-size: 54px;
+  line-height: 62px;
+  border-radius: 0 30px 30px 0;
+}
+
+.block-wrapper__block {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  gap: 30px;
+  margin-right: 196px;
+  padding: 0 50px 28px;
+  border-radius: 0 0 30px 30px;
+  background-color: #ffffff;
+}
+
+.block-wrapper__block::after {
+  position: absolute;
+  content: "";
+  top: 0;
+  right: -20px;
+  width: 20px;
+  height: 20px;
+  background-image: url("../img/svg/right-up-corner.svg");
+}
+
+.block-wrapper__description--intro {
+  margin: -7px 0 0;
+  line-height: 26px;
+}
+
+.block-wrapper__last {
+  position: relative;
+  margin-right: 108px;
+  padding: 11px 15px;
+  background-color: #ffffff;
+  border-radius: 0 0 12px 12px;
+}
+
+.block-wrapper__last::after {
+  position: absolute;
+  content: "";
+  top: 0;
+  right: -20px;
+  width: 20px;
+  height: 20px;
+  background-image: url("../img/svg/right-up-corner.svg");
 }
 
 .btn {
@@ -2670,6 +2772,23 @@ button,
     line-height: 22px;
   }
 
+  .block-wrapper__title--intro {
+    padding: 30px 40px 24px;
+    font-size: 36px;
+    line-height: 44px;
+  }
+
+  .block-wrapper__block {
+    gap: 29px;
+    margin-right: 68px;
+    padding: 0 40px 32px;
+  }
+
+  .block-wrapper__description--intro {
+    margin-top: -4px;
+    line-height: 20px;
+  }
+
   .info-container__block--description {
     gap: 29px;
     margin-right: 68px;
@@ -2746,8 +2865,8 @@ button,
   .swiper-pagination-custom,
   .swiper-horizontal > .swiper-pagination-bullets,
   .swiper-pagination-bullets.swiper-pagination-horizontal {
-    bottom: 34px;
-    right: 41%;
+    top: 233px;
+    left: 22px;
   }
 
   .swiper-horizontal > .swiper-pagination-bullets .swiper-pagination-bullet,
@@ -2786,6 +2905,57 @@ button,
     -ms-grid-columns: 1fr;
     grid-template-columns: 1fr;
     padding: 40px 20px 40px 30px;
+  }
+
+  .block-wrapper__first--intro {
+    padding: 10px 16px;
+    min-width: 80px;
+    min-height: 28px;
+    border-radius: 12px 12px 0 0;
+  }
+
+  .block-wrapper__first::after {
+    right: -10px;
+    width: 10px;
+    height: 10px;
+    background-size: 10px 10px;
+  }
+
+  .block-wrapper__title--intro {
+    padding: 20px 14px 16px;
+    font-size: 22px;
+    line-height: 26px;
+    border-radius: 0 16px 16px 0;
+  }
+
+  .block-wrapper__block {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    margin-right: 29px;
+    padding: 0 15px 11px;
+    border-radius: 0 0 12px 0;
+  }
+
+  .block-wrapper__block::after {
+    right: -10px;
+    width: 10px;
+    height: 10px;
+    background-size: 10px 10px;
+  }
+
+  .block-wrapper__description--intro {
+    margin-top: -6px;
+    font-size: 14px;
+    line-height: 20px;
+  }
+
+  .block-wrapper__last::after {
+    right: -10px;
+    width: 10px;
+    height: 10px;
+    background-size: 10px 10px;
   }
 
   .modal__wrapper {
@@ -2844,18 +3014,20 @@ button,
   }
 
   .intro-card__info {
-    padding: 233px 15px 22px;
+    padding: 233px 15px 13px;
   }
 
   .link {
     margin-top: 0;
-    padding: 19px 57px 19px 19px;
+    padding: 12px 57px 14px 19px;
     font-size: 12px;
     line-height: 12px;
     letter-spacing: 0.24px;
   }
 
   .link::after {
+    top: 2px;
+    right: 3px;
     width: 34px;
     height: 34px;
     background-size: 34px 34px;
